@@ -1,18 +1,9 @@
-*BEST FEATURE SELECTION OF BREAST CANCER DIAGNOSIS USING MACHINE LEARNING*
+**Best Feature Selection of Breast Cancer Diagnosis using Machine Learning**
 
 ***Abstract***
 
 Breast cancer, a life-threatening disease affecting millions worldwide, poses significant challenges due to its time-consuming manual determination process, potential risks, and human errors. It is a condition where cells of the breast develop unnaturally and uncontrollably, resulting in a mass called a tumor. If lumps in the breast are not addressed, they can spread to other regions of the body, including the bones, liver, and lungs. Early diagnosis is crucial for effective treatment and improved patient outcomes. In this research paper, we focus on employing machine learning models to achieve quick identification of breast cancer tumors as benign or malignant. The primary objective is to develop a decision-making visualization pattern using swarm plots and heat maps. To accomplish this, we will utilize the Light GBM (Gradient Boosting Machine) algorithm and compared its performance against other established machine learning models, namely Logistic Regression, Gradient Boosting Algorithm, Random Forest Algorithm, and XG Boost Algorithm.
 
-vi
-
-***List of Figures***
-
-Fig. 4.1.1 Flowchart of Light GBM Algorithm Page no 12 Fig. 5.1.2 Original Dataset collected from Kaggle repository Page no 15 Fig. 5.1.3 Swarm Plot Graphs were plotted Page no 16 Fig. 5.2.4 Refined Dataset after Removal of Outliers Page no 16
-
-vii
-
-1. **Preface**
 1. **Introduction:**
 
 Today, Breast cancer is affecting individuals, particularly women. According to the World Health Organization (WHO). It's a leading cause of female mortality. Around a million women succumb to breast cancer annually (Simon et al.) [5] with India's fatality rate at 13.92%. The prevalence is higher in Australia, Europe and the US, while Malaysia observes later-stage presentations (Abhinav Chauhan et al) [7]. Regular screening is vital due to asymptomatic cases. Early detection aids treatment and survival. Contributing factors include family history, obesity, radiation exposure, and genetics. Recently discovered, breast cancer is categorized as malignant or benign. Analyzing tumor characteristics helps differentiate them. Benign tumors are low-risk, while malignant ones spread to neighboring tissues and the body. Artificial Intelligence (AI) is being employed to classify breast cancer. AI algorithms train on datasets to label tumors as 1 for benign or 0 for malignant (Bardou, Zhang, and Ahmad et al.) [2].
