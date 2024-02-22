@@ -60,18 +60,6 @@ Feature selection was applied to the initial dataset, which originally comprised
 
 ![](Aspose.Words.c70bfd3e-88f9-4f23-9476-2a730b1ae8a1.010.jpeg) ![](Aspose.Words.c70bfd3e-88f9-4f23-9476-2a730b1ae8a1.011.png)
 
-## Discussion:
-
-In the preprocessing stage of our dataset in Google Colab, we first imported the dataset, which was sourced from Kaggle, using the powerful Pandas library. The dataset initially consisted of 569 rows and 33 columns, reflecting a comprehensive collection of features. However, to streamline our analysis and enhance model efficiency, a careful feature selection process was undertaken, resulting in the retention of 16 key features. This meticulous curation aimed to eliminate redundant or irrelevant variables, ensuring that the dataset remains focused on the most impactful attributes for our analysis.
-
-Subsequently, attention was given to handling any missing or inconsistent data points. Google Colab's versatile environment facilitated the use of Pandas functions and other tools to identify and address any missing values within the selected features. Imputation techniques or removal strategies were applied judiciously to maintain the integrity of the dataset.
-
-Normalization or scaling of numerical features was another crucial step in the preprocessing pipeline. This process ensures that all numerical variables are on a comparable scale, preventing any single feature from dominating the model training process. Standard techniques such as Min-Max scaling or Z-score normalization were employed to achieve this standardization.
-
-Categorical variables, if present, were appropriately encoded to numeric representations using techniques like one-hot encoding, enabling seamless integration into machine learning models. This step is pivotal for algorithms that rely on numerical inputs, ensuring that all features contribute meaningfully to the model's learning process.
-
-In conclusion, the preprocessing of our Kaggle-sourced dataset in Google Colab involved meticulous steps such as feature selection, handling missing values, normalization of numerical features, and encoding categorical variables. These steps collectively contribute to the creation of a refined, clean, and well-structured dataset, laying the foundation for robust and accurate machine learning models in subsequent stages of our analysis.
-
 ## Future Work:
 
 We are yet to train and test the algorithm with the refined datasets and build the model to achieve the highest possible accuracy.
