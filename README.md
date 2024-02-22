@@ -27,6 +27,7 @@ The research methodology aims to discern the disparities between benign and mali
 We utilized a diagnostic dataset ( The dataset has been collected from Kaggle repository ) containing 569 rows and 33 columns. These 33 parameters were chosen as the basis for our analysis. These attributes play a vital role in producing visualization patterns, making it easier to generate heat maps for feature visualization.
 
 ![image](https://github.com/arnab-maitra/Best-Feature-Selection-of-Breast-cancer-Diagnosis-using-Machine-Learning/assets/88264132/2034072a-da59-456f-8a75-61754f681b52)
+<b><p align="center">Original Dataset collected from Kaggle Repository</p></b>
 
 Once the dataset (from Kaggle’s repository) is imported using the Panda’s library, it becomes crucial to check for the presence of any missing values. The data cleaning process involves eliminating entire rows that contain any missing values. This step ensures that subsequent tasks, such as visualization, can be carried out effectively with high accuracy. Heat maps are then employed to identify and remove outliers.
 
