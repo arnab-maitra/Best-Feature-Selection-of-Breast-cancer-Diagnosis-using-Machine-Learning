@@ -1,6 +1,6 @@
-**Best Feature Selection of Breast Cancer Diagnosis using Machine Learning**
+# Best Feature Selection of Breast Cancer Diagnosis using Machine Learning
 
-***Abstract***
+## Abstract
 
 Breast cancer, a life-threatening disease affecting millions worldwide, poses significant challenges due to its time-consuming manual determination process, potential risks, and human errors. It is a condition where cells of the breast develop unnaturally and uncontrollably, resulting in a mass called a tumor. If lumps in the breast are not addressed, they can spread to other regions of the body, including the bones, liver, and lungs. Early diagnosis is crucial for effective treatment and improved patient outcomes. In this research paper, we focus on employing machine learning models to achieve quick identification of breast cancer tumors as benign or malignant. The primary objective is to develop a decision-making visualization pattern using swarm plots and heat maps. To accomplish this, we will utilize the Light GBM (Gradient Boosting Machine) algorithm and compared its performance against other established machine learning models, namely Logistic Regression, Gradient Boosting Algorithm, Random Forest Algorithm, and XG Boost Algorithm.
 
