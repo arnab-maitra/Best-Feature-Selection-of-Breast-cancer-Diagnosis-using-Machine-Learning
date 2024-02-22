@@ -31,9 +31,6 @@ We utilized a diagnostic dataset ( The dataset has been collected from Kaggle re
 
 Once the dataset (from Kaggle’s repository) is imported using the Panda’s library, it becomes crucial to check for the presence of any missing values. The data cleaning process involves eliminating entire rows that contain any missing values. This step ensures that subsequent tasks, such as visualization, can be carried out effectively with high accuracy. Heat maps are then employed to identify and remove outliers.
 
-
-
-
 ## Steps of execution of the source code:
 
 1. The required libraries such as NumPy, Pandas, Matplotlib, and Seaborn are imported. These libraries provide tools for data manipulation, visualization, and analysis.
@@ -57,6 +54,7 @@ Overall, this source code provides an initial exploration and preprocessing of t
 Feature selection was applied to the initial dataset, which originally comprised 33 features. Following the feature selection process and data cleaning, the refined dataset has been reduced to 16 features.
 
 ![image](https://github.com/arnab-maitra/Best-Feature-Selection-of-Breast-cancer-Diagnosis-using-Machine-Learning/assets/88264132/3e1c935c-6e90-4b42-a003-3ab798aee973)
+<b><p align="center">Refined Dataset after Removal of Outliers</p></b>
 
 ## Future Work:
 
