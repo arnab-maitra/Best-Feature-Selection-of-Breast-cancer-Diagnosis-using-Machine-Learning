@@ -31,7 +31,7 @@ We utilized a diagnostic dataset ( The dataset has been collected from Kaggle re
 
 Once the dataset (from Kaggle’s repository) is imported using the Panda’s library, it becomes crucial to check for the presence of any missing values. The data cleaning process involves eliminating entire rows that contain any missing values. This step ensures that subsequent tasks, such as visualization, can be carried out effectively with high accuracy. Heat maps are then employed to identify and remove outliers.
 
-![image](https://github.com/arnab-maitra/Best-Feature-Selection-of-Breast-cancer-Diagnosis-using-Machine-Learning/assets/88264132/3e1c935c-6e90-4b42-a003-3ab798aee973)
+
 
 
 ## Steps of execution of the source code:
@@ -50,13 +50,13 @@ Once the dataset (from Kaggle’s repository) is imported using the Panda’s li
 1. A list of features (`drop\_list1`) is defined, and a subset of features (`x\_1`) is created by dropping the specified features from the original dataset.
 1. Another correlation heatmap is plotted for the subset of features to observe the correlation pattern.
 
-   Overall, this source code provides an initial exploration and preprocessing of the breast cancer dataset, including loading the data, defining target and features, visualizing class labels, and conducting correlation analysis. The code suggests a focus on specific features and their correlations in the dataset, possibly for feature selection in preparation for machine learning modeling.
+Overall, this source code provides an initial exploration and preprocessing of the breast cancer dataset, including loading the data, defining target and features, visualizing class labels, and conducting correlation analysis. The code suggests a focus on specific features and their correlations in the dataset, possibly for feature selection in preparation for machine learning modeling.
 
 ## Simulation Results:
 
 Feature selection was applied to the initial dataset, which originally comprised 33 features. Following the feature selection process and data cleaning, the refined dataset has been reduced to 16 features.
 
-
+![image](https://github.com/arnab-maitra/Best-Feature-Selection-of-Breast-cancer-Diagnosis-using-Machine-Learning/assets/88264132/3e1c935c-6e90-4b42-a003-3ab798aee973)
 
 ## Future Work:
 
