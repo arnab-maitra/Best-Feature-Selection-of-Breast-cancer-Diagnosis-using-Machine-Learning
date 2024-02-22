@@ -31,6 +31,9 @@ We utilized a diagnostic dataset ( The dataset has been collected from Kaggle re
 
 Once the dataset (from Kaggle’s repository) is imported using the Panda’s library, it becomes crucial to check for the presence of any missing values. The data cleaning process involves eliminating entire rows that contain any missing values. This step ensures that subsequent tasks, such as visualization, can be carried out effectively with high accuracy. Heat maps are then employed to identify and remove outliers.
 
+![image](https://github.com/arnab-maitra/Best-Feature-Selection-of-Breast-cancer-Diagnosis-using-Machine-Learning/assets/88264132/03e56fd8-436e-420b-8c42-7428b97850c6)
+<b><p align="center">Swarm plot graphs were plotted.</p></b>
+
 ## Steps of execution of the source code:
 
 1. The required libraries such as NumPy, Pandas, Matplotlib, and Seaborn are imported. These libraries provide tools for data manipulation, visualization, and analysis.
