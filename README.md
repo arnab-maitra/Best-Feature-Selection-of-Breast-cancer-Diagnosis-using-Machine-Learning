@@ -16,76 +16,23 @@ Our project aims to address challenges and propose solutions to enhance accuracy
 
 Currently, India reports approximately 178,000 cases of breast cancer. However, manually determining cancer in these cases is an arduous and time-consuming process, often leading to delays and the possibility of human errors. To address this issue, we aim to develop a predictive model that can efficiently classify breast tumors as either malignant or benign using Machine Learning techniques. Our approach involves analyzing the correlation between various features, eliminating redundant data, and ultimately creating a highly accurate model. By leveraging these advanced technologies, we strive to enhance the early detection and diagnosis of breast cancer, which can significantly improve patient outcomes.
 
-## Proposed Model / Algorithm:
-1. **Proposed Model**
+## Proposed Model:
 
-The approach proposed is Light Gradient Boosting (Light GBM Approach).
+Light Gradient Boosting (Light GBM Approach).
 
-A novel approach in breast cancer detection has been introduced utilizing the Light Gradient Boost machine learning technique. This innovative method aims to transform initially weak learners into robust ones, thereby achieving enhanced accuracy in breast cancer detection. Unlike the conventional employment of weak learners as standalone classifiers, this technique leverages a boosting ensemble to achieve heightened classification accuracy. In this approach, the weak learners are harnessed as classifiers, which alone may not yield optimal classification accuracy. However, the concept of a strong learner emerges through the ensemble of these weak classifiers. This ensemble-based boosting technique is rooted in tree-based classification.
+**Experimental Setup:**
 
-![](Aspose.Words.c70bfd3e-88f9-4f23-9476-2a730b1ae8a1.004.jpeg)
+The research methodology aims to discern the disparities between benign and malignant breast cancer cases. Initially, breast cancer data is gathered from a diagnostic dataset. The dataset is then preprocessed, and any missing values are handled by removal. Next, we utilize swarm plots to visualize and compare the features, assessing if there are distinct patterns between benign and malignant cases. Outliers in the features are identified and removed to ensure data integrity. Following the outlier removal, the preprocessed data is split into training and testing datasets. This methodology allows us to gain valuable insights into the characteristics that differentiate these types of cancer and create a robust predictive tool to aid in accurate diagnosis.
 
-![](Aspose.Words.c70bfd3e-88f9-4f23-9476-2a730b1ae8a1.005.png)
+For this research, we utilized a diagnostic dataset ( The dataset has been collected from Kaggle repository) containing 569 rows and 33 columns. These 33 parameters were chosen as the basis for our analysis. These attributes play a vital role in producing visualization patterns, making it easier to generate heat maps for feature visualization.
 
-Notably, the Light Gradient Boost machine learning technique molds the decision tree classifier into a unique weak learner structure, characterized by a vertical orientation. This innovative design, termed the "Leaf-wise Decision Tree Algorithm," showcases its distinctiveness in minimizing training loss compared to alternative algorithms. Through these advancements, the Light Gradient Boost technique demonstrates its potential to significantly improve breast cancer detection accuracy, thus offering promising avenues for enhanced medical diagnostics.
+![](Aspose.Words.c70bfd3e-88f9-4f23-9476-2a730b1ae8a1.006.jpeg) ![](Aspose.Words.c70bfd3e-88f9-4f23-9476-2a730b1ae8a1.007.png)
 
-2. **Proposed algorithms**
+Once the dataset (from Kaggle’s repository) is imported using the Panda’s library, it becomes crucial to check for the presence of any missing values. The data cleaning process involves eliminating entire rows that contain any missing values. This step ensures that subsequent tasks, such as visualization, can be carried out effectively with high accuracy. Heat maps are then employed to identify and remove outliers.
 
-Source Code
+![](Aspose.Words.c70bfd3e-88f9-4f23-9476-2a730b1ae8a1.008.jpeg)
 
-- Import required libraries
-
-import numpy as np
-
-import pandas as pd
-
-import matplotlib.pyplot as plt
-
-from matplotlib.pyplot import figure import seaborn as sns
-
-- Load the data
-
-data = pd.read\_csv('data.csv') data.head()
-
-data.tail() data.size data.shape
-
-- Get feature names col = data.columns print(col)
-
-  data.dtypes
-
-- Target variable
-
-y = data.diagnosis # M or B
-
-- Features
-
-drop\_list = ['Unnamed: 32', 'id', 'diagnosis'] x = data.drop(drop\_list, axis=1)
-
-x.head()
-
-- Visualize the class labels
-
-ax = sns.countplot(x=y, label="Count") # M = 212, B = 357 B, M = y.value\_counts()
-
-print('Number of Benign:', B)
-
-print('Number of Malignant:', M)
-
-- Correlation map
-
-f, ax = plt.subplots(figsize=(18, 18))
-
-sns.heatmap(x.corr(), annot=True, linewidths=.5, fmt='.1f', ax=ax)
-
-drop\_list1 = ['perimeter\_mean', 'radius\_mean', 'compactness\_mean', 'concave points\_mean', 'radius\_se', 'perimeter\_se', 'radius\_worst', 'perimeter\_worst', 'compactness\_worst', 'concave points\_worst', 'compactness\_se', 'concave points\_se', 'texture\_worst', 'area\_worst']
-
-x\_1 = x.drop(drop\_list1, axis=1)
-
-- Correlation heatmap
-
-f, ax = plt.subplots(figsize=(14, 14))
-
-sns.heatmap(x\_1.corr(), annot=True, linewidths=.5, fmt='.1f', ax=ax)
+![](Aspose.Words.c70bfd3e-88f9-4f23-9476-2a730b1ae8a1.009.png)
 
 Steps of execution of the above source code
 
@@ -106,28 +53,14 @@ Steps of execution of the above source code
    Overall, this source code provides an initial exploration and preprocessing of the breast cancer dataset, including loading the data, defining target and features, visualizing class labels, and conducting correlation analysis. The code suggests a focus on specific features and their correlations in the dataset, possibly for feature selection in preparation for machine learning modeling.
 
 5. **Simulation Results:**
-1. **Experimental Setup:**
-
-The research methodology aims to discern the disparities between benign and malignant breast cancer cases. Initially, breast cancer data is gathered from a diagnostic dataset. The dataset is then preprocessed, and any missing values are handled by removal. Next, we utilize swarm plots to visualize and compare the features, assessing if there are distinct patterns between benign and malignant cases. Outliers in the features are identified and removed to ensure data integrity. Following the outlier removal, the preprocessed data is split into training and testing datasets. This methodology allows us to gain valuable insights into the characteristics that differentiate these types of cancer and create a robust predictive tool to aid in accurate diagnosis.
-
-For this research, we utilized a diagnostic dataset ( The dataset has been collected from Kaggle repository) containing 569 rows and 33 columns. These 33 parameters were chosen as the basis for our analysis. These attributes play a vital role in producing visualization patterns, making it easier to generate heat maps for feature visualization.
-
-![](Aspose.Words.c70bfd3e-88f9-4f23-9476-2a730b1ae8a1.006.jpeg) ![](Aspose.Words.c70bfd3e-88f9-4f23-9476-2a730b1ae8a1.007.png)
-
-Once the dataset (from Kaggle’s repository) is imported using the Panda’s library, it becomes crucial to check for the presence of any missing values. The data cleaning process involves eliminating entire rows that contain any missing values. This step ensures that subsequent tasks, such as visualization, can be carried out effectively with high accuracy. Heat maps are then employed to identify and remove outliers.
-
-![](Aspose.Words.c70bfd3e-88f9-4f23-9476-2a730b1ae8a1.008.jpeg)
-
-![](Aspose.Words.c70bfd3e-88f9-4f23-9476-2a730b1ae8a1.009.png)
-
+1. 
 2. **Experimental Results:**
 
 Feature selection was applied to the initial dataset, which originally comprised 33 features. Following the feature selection process and data cleaning, the refined dataset has been reduced to 16 features.
 
 ![](Aspose.Words.c70bfd3e-88f9-4f23-9476-2a730b1ae8a1.010.jpeg) ![](Aspose.Words.c70bfd3e-88f9-4f23-9476-2a730b1ae8a1.011.png)
 
-6. **Discussion and Conclusion:**
-1. **Discussion:![](Aspose.Words.c70bfd3e-88f9-4f23-9476-2a730b1ae8a1.012.jpeg)**
+## Discussion:
 
 In the preprocessing stage of our dataset in Google Colab, we first imported the dataset, which was sourced from Kaggle, using the powerful Pandas library. The dataset initially consisted of 569 rows and 33 columns, reflecting a comprehensive collection of features. However, to streamline our analysis and enhance model efficiency, a careful feature selection process was undertaken, resulting in the retention of 16 key features. This meticulous curation aimed to eliminate redundant or irrelevant variables, ensuring that the dataset remains focused on the most impactful attributes for our analysis.
 
@@ -139,11 +72,11 @@ Categorical variables, if present, were appropriately encoded to numeric represe
 
 In conclusion, the preprocessing of our Kaggle-sourced dataset in Google Colab involved meticulous steps such as feature selection, handling missing values, normalization of numerical features, and encoding categorical variables. These steps collectively contribute to the creation of a refined, clean, and well-structured dataset, laying the foundation for robust and accurate machine learning models in subsequent stages of our analysis.
 
-2. **Future Work:**
+## Future Work:
 
 We are yet to train and test the algorithm with the refined datasets and build the model to achieve the highest possible accuracy.
 
-3. **Conclusion**
+## Conclusion
 
 After removing the outliers, we found that 16 features remained, which will significantly contribute to the overall accuracy of the model. We would now train the algorithm through this refined dataset and achieve the highest possible accuracy.
 
