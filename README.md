@@ -68,4 +68,4 @@ We are yet to train and test the algorithm with the refined datasets and build t
 
 After removing the outliers, we found that 16 features remained, which will significantly contribute to the overall accuracy of the model. We would now train the algorithm through this refined dataset and achieve the highest possible accuracy.
 
-Hopefully, this accuracy of detection of Breast Cancer will aid individuals in receiving early cancer treatment and proactively manage their lives.
+Hopefully, the detection of accuracy of Breast Cancer will aid individuals in receiving early cancer treatment and proactively manage their lives.
