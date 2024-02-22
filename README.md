@@ -20,7 +20,7 @@ Currently, India reports approximately 178,000 cases of breast cancer. However, 
 
 Light Gradient Boosting (Light GBM Approach).
 
-**Experimental Setup:**
+## Experimental Setup:
 
 The research methodology aims to discern the disparities between benign and malignant breast cancer cases. Initially, breast cancer data is gathered from a diagnostic dataset. The dataset is then preprocessed, and any missing values are handled by removal. Next, we utilize swarm plots to visualize and compare the features, assessing if there are distinct patterns between benign and malignant cases. Outliers in the features are identified and removed to ensure data integrity. Following the outlier removal, the preprocessed data is split into training and testing datasets. This methodology allows us to gain valuable insights into the characteristics that differentiate these types of cancer and create a robust predictive tool to aid in accurate diagnosis.
 
