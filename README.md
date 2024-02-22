@@ -31,9 +31,8 @@ We utilized a diagnostic dataset ( The dataset has been collected from Kaggle re
 
 Once the dataset (from Kaggle’s repository) is imported using the Panda’s library, it becomes crucial to check for the presence of any missing values. The data cleaning process involves eliminating entire rows that contain any missing values. This step ensures that subsequent tasks, such as visualization, can be carried out effectively with high accuracy. Heat maps are then employed to identify and remove outliers.
 
-![](Aspose.Words.c70bfd3e-88f9-4f23-9476-2a730b1ae8a1.008.jpeg)
+![image](https://github.com/arnab-maitra/Best-Feature-Selection-of-Breast-cancer-Diagnosis-using-Machine-Learning/assets/88264132/3e1c935c-6e90-4b42-a003-3ab798aee973)
 
-![](Aspose.Words.c70bfd3e-88f9-4f23-9476-2a730b1ae8a1.009.png)
 
 ## Steps of execution of the source code:
 
@@ -53,13 +52,11 @@ Once the dataset (from Kaggle’s repository) is imported using the Panda’s li
 
    Overall, this source code provides an initial exploration and preprocessing of the breast cancer dataset, including loading the data, defining target and features, visualizing class labels, and conducting correlation analysis. The code suggests a focus on specific features and their correlations in the dataset, possibly for feature selection in preparation for machine learning modeling.
 
-5. **Simulation Results:**
-1. 
-2. **Experimental Results:**
+## Simulation Results:
 
 Feature selection was applied to the initial dataset, which originally comprised 33 features. Following the feature selection process and data cleaning, the refined dataset has been reduced to 16 features.
 
-![](Aspose.Words.c70bfd3e-88f9-4f23-9476-2a730b1ae8a1.010.jpeg) ![](Aspose.Words.c70bfd3e-88f9-4f23-9476-2a730b1ae8a1.011.png)
+
 
 ## Future Work:
 
